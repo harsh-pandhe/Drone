@@ -1,101 +1,78 @@
-import Image from "next/image";
+import DroneHero from '@/components/DroneHero';
+import TechGrid from '@/components/TechGrid';
+import ServiceCard from '@/components/ServiceCard';
+import { services } from '@/data/services';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="bg-[#0f172a] min-h-screen">
+      {/* Hero — Scroll-triggered procedural canvas animation */}
+      <DroneHero />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Services Grid */}
+      <section id="services" className="py-24 md:py-32 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="font-mono text-cyan-500 text-xs tracking-[0.3em] block mb-3">
+            {"/// OPERATIONAL MODULES"}
+          </span>
+          <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
+            Operational Services
+          </h2>
+          <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded-full" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {services.map((s, i) => (
+            <ServiceCard key={s.id} service={s} index={i} />
+          ))}
+        </div>
+      </section>
+
+      {/* Tech Grid — Capabilities */}
+      <TechGrid />
+
+      {/* CTA Section */}
+      <section className="py-32 md:py-40 text-center bg-gradient-to-t from-[#0B1120] to-[#0f172a] relative overflow-hidden">
+        {/* Background grid */}
+        <div className="absolute inset-0 grid-bg opacity-10" />
+
+        <div className="relative z-10">
+          <span className="font-mono text-cyan-500/60 text-xs tracking-[0.3em] block mb-4">
+            {"/// READY FOR DEPLOYMENT"}
+          </span>
+          <h2 className="text-5xl md:text-7xl font-rajdhani font-bold mb-4 text-white">
+            Ready to{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+              Scan
+            </span>
+            ?
+          </h2>
+          <p className="text-slate-400 font-inter max-w-md mx-auto mb-10 text-lg">
+            Deploy our fleet and transform your physical assets into
+            high-precision digital twins.
+          </p>
+          <button className="group relative px-12 py-4 bg-cyan-600 hover:bg-cyan-500 text-white font-mono tracking-widest uppercase text-sm transition-all duration-300 overflow-hidden rounded">
+            <span className="relative z-10">Initialize Project</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 border border-cyan-400/30 rounded" />
+          </button>
+        </div>
+
+        {/* Decorative bottom line */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-6 border-t border-slate-800/50">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="font-rajdhani font-bold text-lg text-white tracking-wider">
+            AERO<span className="text-cyan-400">MAP</span>
+          </div>
+          <div className="font-mono text-xs text-slate-500">
+            © 2026 AeroMap Technologies. All systems nominal.
+          </div>
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
