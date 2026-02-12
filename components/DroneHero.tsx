@@ -187,7 +187,7 @@ export default function DroneHero() {
                 {!imagesLoaded && (
                     <div className="absolute inset-0 z-50 bg-[#0B1120] flex flex-col items-center justify-center gap-6">
                         <div className="font-rajdhani text-2xl text-white tracking-wider uppercase">
-                            AeroMap
+                            ASCEND
                         </div>
                         <div className="w-64 h-1 bg-slate-800 rounded-full overflow-hidden">
                             <div
@@ -254,49 +254,54 @@ export default function DroneHero() {
                         style={{ opacity: text1Opacity }}
                         className="text-center absolute"
                     >
-                        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-rajdhani font-bold text-white tracking-tight uppercase leading-none drop-shadow-[0_2px_20px_rgba(0,0,0,0.8)]">
-                            Capture
-                            <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                                Reality
-                            </span>
-                        </h1>
-                        <p className="font-mono text-cyan-400 mt-6 tracking-[0.3em] text-xs sm:text-sm">
-                            {"/// INITIALIZING DRONE SEQUENCE"}
-                        </p>
+                        <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700/40 rounded-2xl px-8 sm:px-12 py-6 sm:py-8">
+                            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-rajdhani font-bold text-white tracking-tight uppercase leading-none">
+                                ASC<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">END</span>
+                            </h1>
+                            <p className="font-inter text-slate-300 mt-3 text-sm sm:text-base tracking-wide">
+                                Autonomous Aerial Intelligence
+                            </p>
+                            <p className="font-mono text-cyan-400 mt-4 tracking-[0.3em] text-xs sm:text-sm">
+                                {"/// INITIALIZING DRONE SEQUENCE"}
+                            </p>
+                        </div>
                     </motion.div>
 
                     {/* Text 2 — Mid scroll */}
                     <motion.div
                         style={{ opacity: text2Opacity }}
-                        className="absolute left-8 md:left-20 top-1/2 -translate-y-1/2 max-w-xl"
+                        className="absolute left-4 sm:left-8 md:left-20 top-1/2 -translate-y-1/2 max-w-xl"
                     >
-                        <h2 className="text-4xl md:text-6xl font-rajdhani font-bold text-white mb-2 drop-shadow-[0_2px_20px_rgba(0,0,0,0.8)]">
-                            PRECISION DATA
-                        </h2>
-                        <div className="h-1 w-24 bg-cyan-500 mb-4" />
-                        <p className="font-inter text-slate-300 text-lg leading-relaxed drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)]">
-                            Transforming physical assets into
-                            <br />
-                            <span className="text-cyan-400 font-bold">digital twins</span>{' '}
-                            with millimeter accuracy.
-                        </p>
+                        <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700/40 rounded-xl px-6 py-5">
+                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-rajdhani font-bold text-white mb-2">
+                                PRECISION DATA
+                            </h2>
+                            <div className="h-1 w-24 bg-cyan-500 mb-4" />
+                            <p className="font-inter text-slate-300 text-sm sm:text-lg leading-relaxed">
+                                Transforming physical assets into
+                                <br />
+                                <span className="text-cyan-400 font-bold">digital twins</span>{' '}
+                                with millimeter accuracy.
+                            </p>
+                        </div>
                     </motion.div>
 
                     {/* Text 3 — Late scroll */}
                     <motion.div
                         style={{ opacity: text3Opacity }}
-                        className="absolute right-8 md:right-20 bottom-32 md:bottom-40 max-w-xl text-right"
+                        className="absolute right-4 sm:right-8 md:right-20 bottom-24 sm:bottom-32 md:bottom-40 max-w-xl text-right"
                     >
-                        <h2 className="text-4xl md:text-6xl font-rajdhani font-bold text-white mb-2 drop-shadow-[0_2px_20px_rgba(0,0,0,0.8)]">
-                            LIDAR READY
-                        </h2>
-                        <div className="h-1 w-24 bg-orange-500 ml-auto mb-4" />
-                        <p className="font-inter text-slate-300 text-lg leading-relaxed drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)]">
-                            Penetrate vegetation. Map complex structures.
-                            <br />
-                            Visualize the unseen.
-                        </p>
+                        <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700/40 rounded-xl px-6 py-5">
+                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-rajdhani font-bold text-white mb-2">
+                                LIDAR READY
+                            </h2>
+                            <div className="h-1 w-24 bg-orange-500 ml-auto mb-4" />
+                            <p className="font-inter text-slate-300 text-sm sm:text-lg leading-relaxed">
+                                Penetrate vegetation. Map complex structures.
+                                <br />
+                                Visualize the unseen.
+                            </p>
+                        </div>
                     </motion.div>
                 </div>
 

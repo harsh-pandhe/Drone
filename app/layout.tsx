@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Rajdhani, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+import CustomCursor from '@/components/CustomCursor';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const rajdhani = Rajdhani({
@@ -11,9 +12,9 @@ const rajdhani = Rajdhani({
 const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  title: 'AeroMap | Precision Aerial Surveying',
+  title: 'ASCEND | Autonomous Aerial Intelligence',
   description:
-    'Turning physical landscapes into actionable digital assets with LiDAR, photogrammetry, and thermal inspection.',
+    'Precision drone surveying & digital twin creation. Turning physical landscapes into actionable data with LiDAR, photogrammetry, and thermal inspection.',
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
       className={`${inter.variable} ${rajdhani.variable} ${mono.variable}`}
     >
       <body className="bg-slate-950 selection:bg-cyan-500/30 selection:text-cyan-100">
+        <CustomCursor />
         {children}
       </body>
     </html>
