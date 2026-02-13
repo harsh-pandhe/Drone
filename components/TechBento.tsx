@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import CountUp from './CountUp';
 
 const bentoItems = [
     {
@@ -14,6 +15,7 @@ const bentoItems = [
                 <circle cx="30" cy="10" r="2" fill="currentColor" />
             </svg>
         ),
+        stat: { value: 94, suffix: '%', label: 'Coverage Efficiency' },
     },
     {
         title: 'Multi-Sensor Fusion',
@@ -30,6 +32,7 @@ const bentoItems = [
                 <line x1="22.5" y1="18.5" x2="19.5" y2="22.5" />
             </svg>
         ),
+        stat: { value: 3, suffix: ' Sensors', label: 'Synchronized' },
     },
     {
         title: 'Edge Computing',
@@ -42,6 +45,7 @@ const bentoItems = [
                 <path d="M13 18h10M18 14v8" strokeLinecap="round" />
             </svg>
         ),
+        stat: { value: 10, suffix: 'x', label: 'Faster Processing' },
     },
     {
         title: 'Real-Time Telemetry',
@@ -53,6 +57,7 @@ const bentoItems = [
                 <circle cx="18" cy="18" r="2" fill="currentColor" />
             </svg>
         ),
+        stat: { value: 10, suffix: ' Hz', label: 'Telemetry Rate' },
     },
     {
         title: 'Cloud Sync',
@@ -64,6 +69,7 @@ const bentoItems = [
                 <path d="M18 20v8M15 25l3 3 3-3" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
         ),
+        stat: { value: 99, suffix: '.9%', label: 'Uptime' },
     },
     {
         title: 'Precision Landing',
@@ -77,6 +83,7 @@ const bentoItems = [
                 <path d="M18 4v4M18 28v4M4 18h4M28 18h4" strokeLinecap="round" />
             </svg>
         ),
+        stat: { value: 5, suffix: ' cm', label: 'Accuracy' },
     },
 ];
 
@@ -126,6 +133,18 @@ export default function TechBento() {
                             <p className="text-slate-400 text-sm font-inter leading-relaxed">
                                 {item.description}
                             </p>
+                            {item.stat && (
+                                <div className="mt-4 pt-4 border-t border-slate-700/40">
+                                    <CountUp
+                                        target={item.stat.value}
+                                        suffix={item.stat.suffix}
+                                        className="font-rajdhani font-bold text-2xl text-cyan-400"
+                                    />
+                                    <span className="block font-mono text-[9px] text-slate-500 tracking-wider mt-1">
+                                        {item.stat.label}
+                                    </span>
+                                </div>
+                            )}
                         </motion.div>
                     ))}
                 </div>

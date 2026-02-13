@@ -19,6 +19,10 @@
     font-family: var(--font-inter), 'Inter', sans-serif;
   }
 
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
   /* Tech Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;

@@ -1,6 +1,6 @@
 'use client';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import POIModal from './POIModal';
 
 const poiData = [
@@ -50,10 +50,18 @@ const poiData = [
 
 export default function HiveInterface() {
     const [activePOI, setActivePOI] = useState<(typeof poiData)[0] | null>(null);
+    const sectionRef = useRef<HTMLDivElement>(null);
+
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ['start end', 'end start'],
+    });
+    // SVG moves at 0.5x speed (parallax depth)
+    const svgY = useTransform(scrollYProgress, [0, 1], [60, -60]);
 
     return (
         <>
-            <section className="relative py-24 md:py-32 px-6 overflow-hidden">
+            <section ref={sectionRef} className="relative py-24 md:py-32 px-6 overflow-hidden">
                 {/* Background grid */}
                 <div className="absolute inset-0 grid-bg opacity-5" />
 
@@ -83,12 +91,13 @@ export default function HiveInterface() {
 
                     {/* Hive SVG + POI overlay */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        {/* Left — Interactive Hive SVG */}
+                        {/* Left — Interactive Hive SVG with parallax */}
                         <motion.div
                             initial={{ opacity: 0, x: -40 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, margin: '-60px' }}
                             transition={{ duration: 0.8 }}
+                            style={{ y: svgY }}
                             className="relative flex justify-center"
                         >
                             <div className="relative w-full max-w-md">

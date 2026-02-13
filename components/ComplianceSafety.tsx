@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import CountUp from './CountUp';
 
 const badges = [
     {
@@ -11,6 +12,7 @@ const badges = [
                 <path d="M11 16l3 3 7-7" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
         ),
+        stat: { value: 5000, suffix: '+', label: 'Flight Hours' },
     },
     {
         title: 'Data Privacy',
@@ -22,6 +24,7 @@ const badges = [
                 <circle cx="16" cy="21" r="2" fill="currentColor" />
             </svg>
         ),
+        stat: { value: 256, suffix: '-bit', label: 'Encryption' },
     },
     {
         title: 'ISO 9001',
@@ -33,6 +36,7 @@ const badges = [
                 <path d="M10 4l2 2M22 4l-2 2" strokeLinecap="round" />
             </svg>
         ),
+        stat: { value: 99, suffix: '.8%', label: 'Accuracy Rate' },
     },
 ];
 
@@ -82,6 +86,18 @@ export default function ComplianceSafety() {
                             <p className="text-slate-400 text-sm font-inter leading-relaxed">
                                 {badge.description}
                             </p>
+                            {badge.stat && (
+                                <div className="mt-4 pt-3 border-t border-slate-700/30">
+                                    <CountUp
+                                        target={badge.stat.value}
+                                        suffix={badge.stat.suffix}
+                                        className="font-rajdhani font-bold text-xl text-cyan-400"
+                                    />
+                                    <span className="block font-mono text-[9px] text-slate-500 tracking-wider mt-0.5">
+                                        {badge.stat.label}
+                                    </span>
+                                </div>
+                            )}
                             {/* Check mark accent */}
                             <div className="mt-5 inline-flex items-center gap-1.5">
                                 <div className="w-2 h-2 rounded-full bg-green-400" />

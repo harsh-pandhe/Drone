@@ -57,7 +57,7 @@ export default function DroneHero() {
             const promises = Array.from({ length: TOTAL_FRAMES }, (_, i) =>
                 new Promise<HTMLImageElement>((resolve, reject) => {
                     const img = new Image();
-                    img.src = `${FRAME_PATH}/ezgif-frame-${padFrame(i + 1)}.jpg`;
+                    img.src = `${FRAME_PATH}/ezgif-frame-${padFrame(i + 1)}.webp`;
                     img.onload = () => {
                         loaded++;
                         setLoadProgress(Math.round((loaded / TOTAL_FRAMES) * 100));
