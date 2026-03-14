@@ -16,42 +16,46 @@ const rajdhani = Rajdhani({
 const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  title: 'ASCEND | Autonomous Aerial Intelligence',
+  title: 'IIC SIT Lonavala | 3-Day Drone Workshop',
   description:
-    'Precision drone surveying & digital twin creation. Turning physical landscapes into actionable data with LiDAR, photogrammetry, and thermal inspection.',
+    'Join the ASCEND Drone Workshop by IIC SIT Lonavala. A 3-day hands-on experience in drone assembly, basics, and flight training. Build your own drone and master the skies.',
   keywords: [
-    'Drone Surveying',
-    'LiDAR',
-    'Photogrammetry',
-    'Digital Twins',
-    'Autonomous Drones',
-    'Aerial Intelligence',
+    'Drone Workshop',
+    'IIC SIT Lonavala',
+    'Drone Assembly',
+    'Flight Training',
+    'Robotics Workshop',
+    'Hands-on Learning',
   ],
-  authors: [{ name: 'Harsh Pandhe' }],
-  metadataBase: new URL('https://ascend-drone.vercel.app'), // Placeholder URL
+  authors: [{ name: 'IIC SIT Lonavala' }],
+  metadataBase: new URL('https://iicsit.in'),
+  icons: {
+    icon: '/iic.png',
+    apple: '/iic.png',
+  },
   openGraph: {
-    title: 'ASCEND | Autonomous Aerial Intelligence',
+    title: 'IIC SIT Lonavala | 3-Day Drone Workshop',
     description:
-      'Precision drone surveying & digital twin creation. Turning physical landscapes into actionable data.',
-    url: 'https://ascend-drone.vercel.app',
-    siteName: 'ASCEND',
+      'Master drone assembly and flying in just 3 days. Hands-on workshop at STES Campus, Lonavala.',
+    url: 'https://iicsit.in',
+    siteName: 'IIC SIT Drone Workshop',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: '/frames/ezgif-frame-001.webp', // Using first frame as preview
-        width: 1200,
-        height: 630,
-        alt: 'ASCEND Drone Fleet',
+        url: '/iic.png',
+        width: 800,
+        height: 800,
+        alt: 'IIC SIT Logo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ASCEND | Autonomous Aerial Intelligence',
+    title: 'IIC SIT Lonavala | 3-Day Drone Workshop',
     description:
-      'Precision drone surveying & digital twin creation. Turning physical landscapes into actionable data.',
-    images: ['/frames/ezgif-frame-001.webp'],
+      'Learn to build and fly drones at SIT Lonavala. Limited seats available!',
+    images: ['/iic.png'],
   },
 };
 
