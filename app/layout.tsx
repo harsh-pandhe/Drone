@@ -18,7 +18,7 @@ const mono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 export const metadata: Metadata = {
   title: 'IIC SIT Lonavala | 3-Day Drone Workshop',
   description:
-    'Join the ASCEND Drone Workshop by IIC SIT Lonavala. A 3-day hands-on experience in drone assembly, basics, and flight training. Build your own drone and master the skies.',
+    'Join the IIC SIT Lonavala Drone Workshop. A 3-day hands-on experience in drone assembly, basics, and flight training. Build your own drone and master the skies.',
   keywords: [
     'Drone Workshop',
     'IIC SIT Lonavala',

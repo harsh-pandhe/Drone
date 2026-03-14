@@ -190,7 +190,7 @@ export default function DroneHero() {
                 {!imagesLoaded && (
                     <div className="absolute inset-0 z-50 bg-[#0B1120] flex flex-col items-center justify-center gap-6">
                         <div className="font-rajdhani text-2xl text-white tracking-wider uppercase">
-                            ASCEND WORKSHOP
+                            IIC SIT WORKSHOP
                         </div>
                         <div className="w-64 h-1 bg-slate-800 rounded-full overflow-hidden">
                             <div
@@ -259,7 +259,7 @@ export default function DroneHero() {
                     >
                         <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700/40 rounded-2xl px-8 sm:px-12 py-6 sm:py-8">
                             <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-rajdhani font-bold text-white tracking-tight uppercase leading-none">
-                                ASC<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">END</span>
+                                IIC<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"> SIT</span>
                             </h1>
                             <p className="font-inter text-slate-300 mt-3 text-sm sm:text-base tracking-wide">
                                 3-Day Drone Workshop — Learn. Build. Fly.

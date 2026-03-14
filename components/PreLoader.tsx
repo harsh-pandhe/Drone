@@ -109,7 +109,7 @@ export default function PreLoader() {
 
                     {/* Brand watermark */}
                     <div className="absolute bottom-8 font-mono text-[10px] text-slate-700 tracking-[0.3em]">
-                        ASCEND WORKSHOP
+                        IIC SIT WORKSHOP
                     </div>
                 </motion.div>
             )}
