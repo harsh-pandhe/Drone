@@ -1,16 +1,16 @@
-# ASCEND — Autonomous Aerial Intelligence
+# IIC SIT Lonavala — 3-Day Drone Workshop
 
-A premium, dark-themed Next.js website for drone-based aerial surveying and digital twin creation. Features scroll-triggered frame animations, interactive canvas simulations, glassmorphic UI, and a custom cursor trail.
+The official website for the IIC SIT Lonavala Drone Workshop. A hands-on, 3-day experience in drone assembly, flight training, and aerial surveying. Features scroll-triggered frame animations, interactive drone anatomy, and a real-time flight loop visualization.
 
 ## ✨ Features
 
+- **Workshop Modules** — 3 days of structured learning from assembly to flight
+- **Interactive Drone Anatomy** — Clickable POI nodes with technical specifications
 - **Scroll-Driven Hero** — 40-frame drone animation triggered by scroll position
-- **Interactive Hive Interface** — Clickable POI nodes with glassmorphic modal overlays
-- **Drone Swarm Simulation** — Isometric canvas with autonomous drones (simplex-noise terrain)
+- **Drone Swarm Simulation** — Interactive isometric canvas with autonomous agents
 - **Custom Cursor Trail** — Smooth physics-based cyan trail (desktop only)
-- **Animated Pre-Loader** — SVG drone with spinning blades
-- **Smooth Scrolling** — CSS `scroll-behavior: smooth` + anchor links
-- **Fully Responsive** — Optimized layouts for mobile, tablet, and desktop
+- **Fully Responsive** — Optimized for students on mobile, tablet, and desktop
+- **Location Integration** — Interactive map of STES Campus, Lonavala
 
 ## 🛠 Tech Stack
 
