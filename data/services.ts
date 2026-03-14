@@ -9,30 +9,30 @@ export interface ServiceItem {
 
 export const services: ServiceItem[] = [
     {
-        id: 'lidar',
-        title: 'LiDAR Mapping',
+        id: 'assembly',
+        title: 'Drone Assembly',
         description:
-            'Laser-based remote sensing for penetrating vegetation and capturing ground topology with unmatched precision.',
-        accuracy: '+/- 2cm',
-        speed: '500 acres/day',
-        features: ['Point Cloud', 'DTM/DSM', 'Vegetation Analysis'],
+            'Learn to build a drone from scratch — frame, motors, ESCs, flight controller, and propellers. Hands-on soldering and wiring included.',
+        accuracy: 'Day 2',
+        speed: 'Full Build',
+        features: ['Frame Assembly', 'Motor Wiring', 'Flight Controller Setup'],
     },
     {
-        id: 'ortho',
-        title: 'Photogrammetry',
+        id: 'basics',
+        title: 'Drone Basics',
         description:
-            'High-resolution orthomosaics created from thousands of stitched aerial images for comprehensive site documentation.',
-        accuracy: '1cm GSD',
-        speed: '1200 acres/day',
-        features: ['2D Orthomosaics', '3D Mesh', 'Texture Mapping'],
+            'Understand how drones work — aerodynamics, components, battery management, safety protocols, and pre-flight checklists.',
+        accuracy: 'Day 1',
+        speed: 'Theory + Demo',
+        features: ['Aerodynamics', 'Safety Protocols', 'Battery Management'],
     },
     {
-        id: 'thermal',
-        title: 'Thermal Inspection',
+        id: 'flying',
+        title: 'Flight Training',
         description:
-            'Radiometric thermal imaging to detect heat leaks, solar panel defects, and moisture intrusion patterns.',
-        accuracy: '0.04°C Sensitivity',
-        speed: 'Rapid Scan',
-        features: ['Solar Inspection', 'Roof Moisture', 'Utility Lines'],
+            'Get behind the sticks and fly! Guided practice sessions from hovering basics to confident maneuvering with instructor support.',
+        accuracy: 'Day 3',
+        speed: 'Hands-On',
+        features: ['Hovering Drills', 'Navigation Skills', 'Emergency Landing'],
     },
 ];

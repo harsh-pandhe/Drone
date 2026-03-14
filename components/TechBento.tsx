@@ -4,8 +4,8 @@ import CountUp from './CountUp';
 
 const bentoItems = [
     {
-        title: 'AI Path Planning',
-        description: 'Neural-net waypoint optimization for maximum coverage with minimum flight time.',
+        title: 'Drone Assembly',
+        description: 'Learn to build a complete drone from components — frame, motors, ESCs, and flight controller.',
         span: 'md:col-span-2',
         icon: (
             <svg viewBox="0 0 36 36" className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -15,11 +15,11 @@ const bentoItems = [
                 <circle cx="30" cy="10" r="2" fill="currentColor" />
             </svg>
         ),
-        stat: { value: 94, suffix: '%', label: 'Coverage Efficiency' },
+        stat: { value: 100, suffix: '%', label: 'Hands-On Learning' },
     },
     {
-        title: 'Multi-Sensor Fusion',
-        description: 'LiDAR + RGB + Thermal synchronized to a single georeferenced dataset.',
+        title: 'Flight Controls',
+        description: 'Master throttle, yaw, pitch, and roll — from hovering to confident maneuvering.',
         span: '',
         icon: (
             <svg viewBox="0 0 36 36" className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -32,11 +32,11 @@ const bentoItems = [
                 <line x1="22.5" y1="18.5" x2="19.5" y2="22.5" />
             </svg>
         ),
-        stat: { value: 3, suffix: ' Sensors', label: 'Synchronized' },
+        stat: { value: 4, suffix: ' Axes', label: 'Of Control' },
     },
     {
-        title: 'Edge Computing',
-        description: 'On-board NVIDIA Jetson processes point clouds mid-flight for instant QA.',
+        title: 'Safety Protocols',
+        description: 'Pre-flight checklists, battery handling, emergency procedures, and airspace rules.',
         span: '',
         icon: (
             <svg viewBox="0 0 36 36" className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -45,11 +45,11 @@ const bentoItems = [
                 <path d="M13 18h10M18 14v8" strokeLinecap="round" />
             </svg>
         ),
-        stat: { value: 10, suffix: 'x', label: 'Faster Processing' },
+        stat: { value: 12, suffix: '+', label: 'Safety Topics' },
     },
     {
-        title: 'Real-Time Telemetry',
-        description: 'Live position, battery, altitude and sensor health streamed at 10 Hz.',
+        title: 'FPV Flying',
+        description: 'Master ultra-low latency FPV flight and real-time high-definition video transmission during live training.',
         span: '',
         icon: (
             <svg viewBox="0 0 36 36" className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -57,11 +57,11 @@ const bentoItems = [
                 <circle cx="18" cy="18" r="2" fill="currentColor" />
             </svg>
         ),
-        stat: { value: 10, suffix: ' Hz', label: 'Telemetry Rate' },
+        stat: { value: 3, suffix: ' Hrs', label: 'Flight Time' },
     },
     {
-        title: 'Cloud Sync',
-        description: 'Automatic upload to your private cloud workspace the moment the drone lands.',
+        title: 'Maintenance',
+        description: 'Learn to troubleshoot, repair, and maintain your drone for long-lasting performance.',
         span: '',
         icon: (
             <svg viewBox="0 0 36 36" className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -69,11 +69,11 @@ const bentoItems = [
                 <path d="M18 20v8M15 25l3 3 3-3" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
         ),
-        stat: { value: 99, suffix: '.9%', label: 'Uptime' },
+        stat: { value: 5, suffix: '+', label: 'Repair Skills' },
     },
     {
-        title: 'Precision Landing',
-        description: 'Computer-vision guided return-to-base with ±5 cm touchdown accuracy.',
+        title: 'Certification',
+        description: 'Earn your workshop completion certificate — proof of your drone building and flying skills.',
         span: 'md:col-span-2',
         icon: (
             <svg viewBox="0 0 36 36" className="w-9 h-9" fill="none" stroke="currentColor" strokeWidth="1.4">
@@ -83,7 +83,7 @@ const bentoItems = [
                 <path d="M18 4v4M18 28v4M4 18h4M28 18h4" strokeLinecap="round" />
             </svg>
         ),
-        stat: { value: 5, suffix: ' cm', label: 'Accuracy' },
+        stat: { value: 1, suffix: '', label: 'Official Certificate' },
     },
 ];
 
@@ -102,12 +102,12 @@ export default function TechBento() {
                     className="text-center mb-16"
                 >
                     <span className="font-mono text-cyan-500 text-xs tracking-[0.3em] block mb-3">
-                        {'/// TECHNOLOGY'}
+                        {'/// SKILLS'}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
-                        Built for the{' '}
+                        Skills You&apos;ll{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                            Edge
+                            Master
                         </span>
                     </h2>
                     <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded-full" />

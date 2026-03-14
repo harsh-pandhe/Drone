@@ -399,14 +399,14 @@ export default function DroneSwarm() {
                         {'/// LIVE SIMULATION'}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
-                        Swarm{' '}
+                        Flight{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                            Intelligence
+                            Simulation
                         </span>
                     </h2>
                     <p className="text-slate-400 font-inter max-w-xl mx-auto text-base">
-                        Click on the terrain to deploy survey zones. Autonomous drones will
-                        navigate, scan, and map the topography in real-time.
+                        Try our interactive drone simulation! Click on the terrain
+                        to deploy drones and watch them navigate autonomously.
                     </p>
                 </motion.div>
 
@@ -433,7 +433,7 @@ export default function DroneSwarm() {
                         LIVE
                     </div>
                     <div className="absolute bottom-3 left-4 font-mono text-[9px] text-slate-500 tracking-wider">
-                        CLICK TO DEPLOY SURVEY ZONE
+                        CLICK TO DEPLOY DRONES
                     </div>
                 </motion.div>
             </div>

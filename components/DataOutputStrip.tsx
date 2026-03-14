@@ -1,18 +1,18 @@
 'use client';
 
 const formats = [
-    'LAS / LAZ',
-    'GeoTIFF',
-    'OBJ / FBX',
-    'DXF / DWG',
-    'Orthomosaic',
-    'DSM / DTM',
-    'Point Cloud',
-    'KML / KMZ',
-    'Thermal Map',
-    'NDVI Index',
-    'CSV Reports',
-    '3D Mesh',
+    'Certificate',
+    'Assembly Skills',
+    'Flight Hours',
+    'Safety Training',
+    'FPV Experience',
+    'Drone Kit',
+    'Community Access',
+    'Workshop Notes',
+    'Video Tutorials',
+    'Instructor Support',
+    'Maintenance Guide',
+    'Flight Log',
 ];
 
 export default function DataOutputStrip() {
@@ -24,7 +24,7 @@ export default function DataOutputStrip() {
             {/* Label — above on mobile, inline on desktop */}
             <div className="px-6 mb-3 md:mb-0 md:absolute md:left-6 md:top-1/2 md:-translate-y-1/2 z-10">
                 <span className="font-mono text-[9px] text-cyan-500/60 tracking-[0.3em] uppercase">
-                    Output Formats
+                    What You Take Home
                 </span>
             </div>
 

@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 const steps = [
     {
         num: '01',
-        title: 'Plan',
-        description: 'Define the survey area, set waypoints and altitude parameters via our mission planner.',
+        title: 'Day 1: Theory',
+        description: 'Learn drone fundamentals — aerodynamics, components, safety rules, and regulations.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <rect x="4" y="4" width="24" height="24" rx="3" />
@@ -16,8 +16,8 @@ const steps = [
     },
     {
         num: '02',
-        title: 'Launch',
-        description: 'Automated pre-flight checks, motor spin-up and precision GPS lock before takeoff.',
+        title: 'Day 2: Assembly',
+        description: 'Hands-on soldering, wiring, and building a complete drone from parts to power-up.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M16 28V8M16 8l-6 6M16 8l6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -27,8 +27,8 @@ const steps = [
     },
     {
         num: '03',
-        title: 'Capture',
-        description: 'Multi-sensor data acquisition at optimal overlap — LiDAR, RGB and thermal in one pass.',
+        title: 'Day 3: Flying',
+        description: 'Take the controls! Guided flying sessions from hovering to confident maneuvering.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <circle cx="16" cy="16" r="10" />
@@ -40,8 +40,8 @@ const steps = [
     },
     {
         num: '04',
-        title: 'Process',
-        description: 'Edge-computed point clouds and orthomosaics delivered to your dashboard in near real-time.',
+        title: 'Certification',
+        description: 'Complete the workshop and receive your official drone pilot training certificate.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <rect x="6" y="6" width="20" height="20" rx="2" />
@@ -68,12 +68,12 @@ export default function FlightLoop() {
                     className="text-center mb-20"
                 >
                     <span className="font-mono text-cyan-500 text-xs tracking-[0.3em] block mb-3">
-                        {'/// FLIGHT LOOP'}
+                        {'/// WORKSHOP FLOW'}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
-                        Mission{' '}
+                        3-Day{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                            Pipeline
+                            Journey
                         </span>
                     </h2>
                 </motion.div>

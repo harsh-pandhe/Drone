@@ -183,11 +183,14 @@ export default function DroneHero() {
             <div className="sticky top-0 h-screen w-full overflow-hidden">
                 <canvas ref={canvasRef} className="absolute inset-0" />
 
+                {/* Top gradient overlay for navbar visibility */}
+                <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#0B1120]/80 to-transparent pointer-events-none z-10" />
+
                 {/* ── Loading Overlay ──────────────── */}
                 {!imagesLoaded && (
                     <div className="absolute inset-0 z-50 bg-[#0B1120] flex flex-col items-center justify-center gap-6">
                         <div className="font-rajdhani text-2xl text-white tracking-wider uppercase">
-                            ASCEND
+                            ASCEND WORKSHOP
                         </div>
                         <div className="w-64 h-1 bg-slate-800 rounded-full overflow-hidden">
                             <div
@@ -196,7 +199,7 @@ export default function DroneHero() {
                             />
                         </div>
                         <div className="font-mono text-xs text-cyan-500 tracking-wider">
-                            INITIALIZING SYSTEMS... {loadProgress}%
+                            PREPARING WORKSHOP... {loadProgress}%
                         </div>
                     </div>
                 )}
@@ -259,10 +262,10 @@ export default function DroneHero() {
                                 ASC<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">END</span>
                             </h1>
                             <p className="font-inter text-slate-300 mt-3 text-sm sm:text-base tracking-wide">
-                                Autonomous Aerial Intelligence
+                                3-Day Drone Workshop — Learn. Build. Fly.
                             </p>
                             <p className="font-mono text-cyan-400 mt-4 tracking-[0.3em] text-xs sm:text-sm">
-                                {"/// INITIALIZING DRONE SEQUENCE"}
+                                {"/// REGISTER NOW • LIMITED SEATS"}
                             </p>
                         </div>
                     </motion.div>
@@ -274,14 +277,14 @@ export default function DroneHero() {
                     >
                         <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700/40 rounded-xl px-6 py-5">
                             <h2 className="text-3xl sm:text-4xl md:text-6xl font-rajdhani font-bold text-white mb-2">
-                                PRECISION DATA
+                                HANDS-ON LEARNING
                             </h2>
                             <div className="h-1 w-24 bg-cyan-500 mb-4" />
                             <p className="font-inter text-slate-300 text-sm sm:text-lg leading-relaxed">
-                                Transforming physical assets into
+                                Assemble your own drone from
                                 <br />
-                                <span className="text-cyan-400 font-bold">digital twins</span>{' '}
-                                with millimeter accuracy.
+                                <span className="text-cyan-400 font-bold">scratch</span>{' '}
+                                with expert guidance.
                             </p>
                         </div>
                     </motion.div>
@@ -293,13 +296,13 @@ export default function DroneHero() {
                     >
                         <div className="bg-slate-900/60 backdrop-blur-md border border-slate-700/40 rounded-xl px-6 py-5">
                             <h2 className="text-3xl sm:text-4xl md:text-6xl font-rajdhani font-bold text-white mb-2">
-                                LIDAR READY
+                                FLIGHT READY
                             </h2>
                             <div className="h-1 w-24 bg-orange-500 ml-auto mb-4" />
                             <p className="font-inter text-slate-300 text-sm sm:text-lg leading-relaxed">
-                                Penetrate vegetation. Map complex structures.
+                                Master drone controls. Fly with confidence.
                                 <br />
-                                Visualize the unseen.
+                                Take to the skies.
                             </p>
                         </div>
                     </motion.div>
@@ -311,7 +314,7 @@ export default function DroneHero() {
                     className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-none z-20"
                 >
                     <span className="font-mono text-[10px] text-cyan-400/60 tracking-widest uppercase">
-                        Scroll to deploy
+                        Scroll to explore
                     </span>
                     <motion.div
                         animate={{ y: [0, 8, 0] }}

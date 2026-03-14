@@ -1,12 +1,13 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const links = [
-    { label: 'Services', href: '#services' },
-    { label: 'Technology', href: '#technology' },
-    { label: 'Process', href: '#process' },
-    { label: 'Compliance', href: '#compliance' },
+    { label: 'Workshop', href: '#services' },
+    { label: 'Skills', href: '#technology' },
+    { label: 'Schedule', href: '#process' },
+    { label: 'Perks', href: '#compliance' },
 ];
 
 export default function Navbar() {
@@ -32,15 +33,26 @@ export default function Navbar() {
                 initial={{ y: 0 }}
                 animate={{ y: visible ? 0 : -100 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
-                className={`fixed top-0 left-0 right-0 z-[9990] transition-colors duration-300 ${scrolled
-                        ? 'bg-slate-900/70 backdrop-blur-xl border-b border-slate-700/30 shadow-lg shadow-black/20'
-                        : 'bg-transparent'
+                className={`fixed top-0 left-0 right-0 z-[9990] transition-all duration-500 ${scrolled
+                    ? 'bg-slate-900/80 backdrop-blur-xl border-b border-slate-700/30 shadow-lg shadow-black/40 py-0'
+                    : 'bg-slate-900/40 backdrop-blur-md py-2'
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
                     {/* Logo */}
-                    <a href="#" className="font-rajdhani font-bold text-xl text-white tracking-wider">
-                        ASC<span className="text-cyan-400">END</span>
+                    <a href="#" className="flex items-center gap-3 group">
+                        <div className="relative w-9 h-9 overflow-hidden rounded-lg border border-slate-700/50 bg-slate-900/50 p-1 flex items-center justify-center transition-transform group-hover:scale-110">
+                            <Image
+                                src="/iic.png"
+                                alt="IIC Logo"
+                                width={32}
+                                height={32}
+                                className="object-contain"
+                            />
+                        </div>
+                        <span className="font-rajdhani font-bold text-xl text-white tracking-widest uppercase">
+                            IIC<span className="text-cyan-400 font-medium"> SIT</span>
+                        </span>
                     </a>
 
                     {/* Desktop links */}
@@ -55,10 +67,12 @@ export default function Navbar() {
                             </a>
                         ))}
                         <a
-                            href="#contact"
+                            href="https://iicsit.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-5 py-1.5 border border-cyan-500/40 text-cyan-400 font-mono text-[11px] tracking-wider uppercase rounded hover:bg-cyan-500/10 transition-colors duration-200"
                         >
-                            Contact
+                            Register
                         </a>
                     </div>
 
@@ -106,11 +120,13 @@ export default function Navbar() {
                                 </a>
                             ))}
                             <a
-                                href="#contact"
+                                href="https://iicsit.in"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 onClick={() => setMobileOpen(false)}
                                 className="mt-2 text-center px-5 py-2 border border-cyan-500/40 text-cyan-400 font-mono text-sm tracking-wider uppercase rounded hover:bg-cyan-500/10 transition-colors"
                             >
-                                Contact
+                                Register
                             </a>
                         </div>
                     </motion.div>

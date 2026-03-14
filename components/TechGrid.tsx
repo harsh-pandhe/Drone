@@ -2,11 +2,11 @@
 import { motion } from 'framer-motion';
 
 const capabilities = [
-    'RTK/PPK Georeferencing',
-    'Oblique & Nadir Capture',
-    'Volumetric Calculations',
-    'Autonomous Flight Planning',
-    'Multi-Sensor Fusion',
+    'Drone Assembly & Soldering',
+    'Flight Controller Configuration',
+    'Throttle, Yaw, Pitch & Roll',
+    'Pre-Flight Safety Checklists',
+    'FPV & Line-of-Sight Flying',
 ];
 
 export default function TechGrid() {
@@ -29,19 +29,19 @@ export default function TechGrid() {
                         transition={{ duration: 0.7 }}
                     >
                         <h2 className="text-cyan-500 font-mono mb-4 text-xs sm:text-sm tracking-[0.3em]">
-                            {"/// SYSTEM CAPABILITIES"}
+                            {"/// WHAT YOU'LL LEARN"}
                         </h2>
                         <h3 className="text-4xl sm:text-5xl md:text-6xl font-rajdhani font-bold text-white mb-6 leading-tight">
-                            Deploying Advanced
+                            Mastering the Art of
                             <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
-                                Aerial Intelligence
+                                Drone Flight
                             </span>
                         </h3>
                         <p className="text-slate-400 text-base md:text-lg mb-10 font-inter leading-relaxed max-w-lg">
-                            Our fleet utilizes RTK (Real-Time Kinematic) positioning and
-                            radiometric thermal sensors to deliver survey-grade accuracy
-                            faster than traditional ground methods.
+                            Our 3-day workshop covers everything from drone theory
+                            and hands-on assembly to real flight experience — taught
+                            by certified drone pilots and instructors.
                         </p>
 
                         <ul className="space-y-4">

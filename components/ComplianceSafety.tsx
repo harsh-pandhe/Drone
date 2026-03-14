@@ -4,8 +4,8 @@ import CountUp from './CountUp';
 
 const badges = [
     {
-        title: 'FAA Part 107',
-        description: 'Fully certified for commercial UAS operations across all US airspace classes.',
+        title: 'Expert Instructors',
+        description: 'Learn from certified drone pilots with thousands of flight hours and years of teaching experience.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.4">
                 <path d="M16 3l12 7v10c0 6-5 9-12 12C9 29 4 26 4 20V10l12-7z" />
@@ -15,8 +15,8 @@ const badges = [
         stat: { value: 5000, suffix: '+', label: 'Flight Hours' },
     },
     {
-        title: 'Data Privacy',
-        description: 'GDPR-aligned data handling with end-to-end encryption and customer-owned storage.',
+        title: 'Hands-On Practice',
+        description: 'Every participant gets personal flight time, their own assembly station, and 1-on-1 instructor support.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.4">
                 <rect x="8" y="14" width="16" height="12" rx="2" />
@@ -24,11 +24,11 @@ const badges = [
                 <circle cx="16" cy="21" r="2" fill="currentColor" />
             </svg>
         ),
-        stat: { value: 256, suffix: '-bit', label: 'Encryption' },
+        stat: { value: 3, suffix: ' Days', label: 'Of Practice' },
     },
     {
-        title: 'ISO 9001',
-        description: 'Quality management certified — every deliverable meets rigorous accuracy standards.',
+        title: 'Certificate',
+        description: 'Receive an official workshop completion certificate validating your drone building and flying skills.',
         icon: (
             <svg viewBox="0 0 32 32" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.4">
                 <circle cx="16" cy="16" r="12" />
@@ -36,7 +36,7 @@ const badges = [
                 <path d="M10 4l2 2M22 4l-2 2" strokeLinecap="round" />
             </svg>
         ),
-        stat: { value: 99, suffix: '.8%', label: 'Accuracy Rate' },
+        stat: { value: 100, suffix: '%', label: 'Completion Rate' },
     },
 ];
 
@@ -55,12 +55,12 @@ export default function ComplianceSafety() {
                     className="text-center mb-16"
                 >
                     <span className="font-mono text-cyan-500 text-xs tracking-[0.3em] block mb-3">
-                        {'/// COMPLIANCE & SAFETY'}
+                        {'/// WORKSHOP PERKS'}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
-                        Trust &{' '}
+                        Why Join{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                            Certification
+                            ASCEND
                         </span>
                     </h2>
                     <div className="h-1 w-20 bg-gradient-to-r from-cyan-500 to-blue-600 mx-auto rounded-full" />

@@ -5,45 +5,45 @@ import POIModal from './POIModal';
 
 const poiData = [
     {
-        id: 'nav',
-        label: 'Navigation Core',
+        id: 'assembly',
+        label: 'Assembly Station',
         x: '28%',
         y: '18%',
-        title: 'Autonomous Navigation',
+        title: 'Assembly Station',
         description:
-            'RTK-GPS and visual-inertial odometry fused for centimetre-level position accuracy — even in GPS-denied environments like under-bridge inspections.',
+            'Hands-on drone assembly area where you\'ll learn to build a complete drone from individual components — frame, motors, ESCs, and flight controller.',
         specs: [
-            { label: 'Position Accuracy', value: '±2 cm RTK' },
-            { label: 'Update Rate', value: '200 Hz IMU' },
-            { label: 'Fail-safe', value: 'Triple redundant' },
+            { label: 'Duration', value: 'Full Day' },
+            { label: 'Skill Level', value: 'Beginner' },
+            { label: 'Tools', value: 'All Provided' },
         ],
     },
     {
-        id: 'sensor',
-        label: 'Sensor Array',
+        id: 'simulator',
+        label: 'Flight Simulator',
         x: '72%',
         y: '32%',
-        title: 'Multi-Sensor Payload',
+        title: 'Flight Simulator Lab',
         description:
-            'Simultaneously captures LiDAR point clouds, RGB orthomosaics, and radiometric thermal data in a single flight pass — no payload swaps needed.',
+            'Practice drone flying in a safe virtual environment before taking to real flight. Master throttle, yaw, pitch, and roll controls with zero risk.',
         specs: [
-            { label: 'LiDAR Points', value: '1.2M pts/sec' },
-            { label: 'Camera', value: '61 MP Full-Frame' },
-            { label: 'Thermal', value: '0.04°C NETD' },
+            { label: 'Simulators', value: '10 Stations' },
+            { label: 'Modes', value: 'Beginner to Pro' },
+            { label: 'Practice', value: 'Unlimited' },
         ],
     },
     {
-        id: 'comms',
-        label: 'Data Link',
+        id: 'theory',
+        label: 'Theory Lab',
         x: '50%',
         y: '68%',
-        title: 'Encrypted Data Link',
+        title: 'Theory & Safety Lab',
         description:
-            'AES-256 encrypted mesh radio delivers real-time telemetry and compressed preview imagery to the ground station up to 15 km line-of-sight.',
+            'Interactive classroom sessions covering aerodynamics, battery safety, drone regulations, and pre-flight checklists — everything you need before your first flight.',
         specs: [
-            { label: 'Range', value: '15 km LOS' },
-            { label: 'Bandwidth', value: '100 Mbps' },
-            { label: 'Encryption', value: 'AES-256' },
+            { label: 'Topics', value: '12 Modules' },
+            { label: 'Materials', value: 'Included' },
+            { label: 'Certificate', value: 'On Completion' },
         ],
     },
 ];
@@ -75,17 +75,17 @@ export default function HiveInterface() {
                         className="text-center mb-16"
                     >
                         <span className="font-mono text-cyan-500 text-xs tracking-[0.3em] block mb-3">
-                            {'/// HIVE INTERFACE'}
+                            {'/// WORKSHOP ZONES'}
                         </span>
                         <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
-                            Anatomy of{' '}
+                            Inside the{' '}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                                Autonomy
+                                Workshop
                             </span>
                         </h2>
                         <p className="text-slate-400 font-inter max-w-xl mx-auto text-base">
-                            Explore the core subsystems powering fully autonomous survey
-                            missions. Tap a node to learn more.
+                            Explore the three core zones of our hands-on workshop.
+                            Tap a node to learn more.
                         </p>
                     </motion.div>
 

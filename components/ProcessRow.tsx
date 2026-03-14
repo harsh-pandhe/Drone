@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 const processSteps = [
     {
         num: '01',
-        title: 'Site Assessment',
+        title: 'Day 1: Drone Basics',
         description:
-            'GIS analysis of the target area, airspace de-confliction, and flight-path simulation before boots ever touch the ground.',
-        detail: 'Typical turnaround: 24 hrs',
+            'Introduction to drones — types, components, aerodynamics, safety protocols, regulations, and battery management fundamentals.',
+        detail: 'Theory + Live Demos',
         icon: (
             <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <circle cx="14" cy="14" r="11" />
@@ -17,10 +17,10 @@ const processSteps = [
     },
     {
         num: '02',
-        title: 'Data Acquisition',
+        title: 'Day 2: Assembly Workshop',
         description:
-            'Autonomous multi-pass flights capturing overlapping LiDAR sweeps, 61 MP nadir photography, and calibrated thermal imagery.',
-        detail: 'Up to 1,200 acres / day',
+            'Hands-on drone building — soldering, wiring, motor mounting, ESC configuration, flight controller setup, and first power-on.',
+        detail: 'Full Build Experience',
         icon: (
             <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <rect x="4" y="8" width="20" height="14" rx="2" />
@@ -32,10 +32,10 @@ const processSteps = [
     },
     {
         num: '03',
-        title: 'Processing & QA',
+        title: 'Day 3: Flight Training',
         description:
-            'Point-cloud alignment, photogrammetric bundle adjustment, and automated quality metrics — powered by edge + cloud compute.',
-        detail: 'Delivered within 48 hrs',
+            'Take the controls — guided flying sessions starting from basic hovering, progressing to navigation drills, and emergency landings.',
+        detail: '3+ Hours Flight Time',
         icon: (
             <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M4 14h4l3-6 4 12 3-8h6" strokeLinecap="round" strokeLinejoin="round" />
@@ -44,10 +44,10 @@ const processSteps = [
     },
     {
         num: '04',
-        title: 'Deliverables',
+        title: 'Certificate & Wrap-Up',
         description:
-            'Georeferenced point clouds, orthomosaics, DSM/DTMs, and interactive 3D models available on your secure dashboard.',
-        detail: 'Formats: LAS, GeoTIFF, OBJ',
+            'Complete the workshop and receive your official drone pilot training certificate, workshop materials, and a community membership.',
+        detail: 'Official Certification',
         icon: (
             <svg viewBox="0 0 28 28" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M6 20V8l8-4 8 4v12l-8 4-8-4z" />
@@ -70,12 +70,12 @@ export default function ProcessRow() {
                     className="text-center mb-16"
                 >
                     <span className="font-mono text-cyan-500 text-xs tracking-[0.3em] block mb-3">
-                        {'/// WORKFLOW'}
+                        {'/// SCHEDULE'}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-rajdhani font-bold mb-4 text-white">
-                        How We{' '}
+                        3-Day Workshop{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-                            Deliver
+                            Plan
                         </span>
                     </h2>
                 </motion.div>
@@ -96,8 +96,8 @@ export default function ProcessRow() {
                                     viewport={{ once: true }}
                                     transition={{ delay: 0.1, duration: 0.6 }}
                                     className={`relative flex items-start gap-6 md:gap-0 ${isLeft
-                                            ? 'md:flex-row md:pr-[calc(50%+2rem)]'
-                                            : 'md:flex-row-reverse md:pl-[calc(50%+2rem)]'
+                                        ? 'md:flex-row md:pr-[calc(50%+2rem)]'
+                                        : 'md:flex-row-reverse md:pl-[calc(50%+2rem)]'
                                         }`}
                                 >
                                     {/* Timeline node */}
