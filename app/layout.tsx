@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   authors: [{ name: 'IIC SIT Lonavala' }],
   metadataBase: new URL('https://iicsit.in'),
   icons: {
-    icon: '/iic.png',
-    apple: '/iic.png',
+    icon: '/drone.jpg',
+    apple: '/drone.jpg',
   },
   openGraph: {
     title: 'IIC SIT Lonavala | 3-Day Drone Workshop',
