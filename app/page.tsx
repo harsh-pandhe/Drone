@@ -119,7 +119,7 @@ export default function Home() {
           </p>
 
           <a
-            href="https://iicsit.in"
+            href="https://forms.gle/283HbyhVTR4BsBLb9"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-block px-12 py-4 bg-cyan-600 hover:bg-cyan-500 text-white font-mono tracking-widest uppercase text-sm sm:text-base transition-all duration-300 overflow-hidden rounded-lg shadow-[0_0_30px_rgba(6,182,212,0.3)] hover:shadow-[0_0_50px_rgba(6,182,212,0.5)]"
