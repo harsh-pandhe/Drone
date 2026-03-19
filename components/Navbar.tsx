@@ -67,7 +67,7 @@ export default function Navbar() {
                             </a>
                         ))}
                         <a
-                            href="https://iicsit.in"
+                            href="https://forms.gle/283HbyhVTR4BsBLb9"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-5 py-1.5 border border-cyan-500/40 text-cyan-400 font-mono text-[11px] tracking-wider uppercase rounded hover:bg-cyan-500/10 transition-colors duration-200"
@@ -120,7 +120,7 @@ export default function Navbar() {
                                 </a>
                             ))}
                             <a
-                                href="https://iicsit.in"
+                                href="https://forms.gle/283HbyhVTR4BsBLb9"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setMobileOpen(false)}
